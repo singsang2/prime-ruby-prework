@@ -4,10 +4,8 @@ def prime?(number)
     false
   else  
     for i in 2..((number**0.5).round)
-      if number % i == 0
-        return false
-      end
+      false if number % i == 0 
     end 
-    return true
+    true
   end
 end
